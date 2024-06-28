@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html{
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    font-size: 62.5%;
+}
+
+body{
+    background: url('../images/bg-desktop.svg') no-repeat;
+    background-size: cover;
+    background-color: var(--violet);
+    font-weight: 400;
+    min-height: 100vh;
+}
+
+header{
+    padding: 3rem 4rem;
+}
+
+header img{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    padding: 1rem 4rem;
+    display: flex;
+}
+
+.container img{
+    width: 50%;
+}
+
+.container .textos{
+    flex-direction: column;
+    margin: 4rem 2rem 0 4rem;
+}
+
+.container .titulo{
+    font-weight: 600;
+    font-size: 5.5rem;
+    line-height: 6.5rem;
+}
+
+.container p{
+    font-size: 2.2rem;
+    margin-top: 2rem;
+}
+
+.container .botao{
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 2rem;
+    padding: 1.5rem 5.5rem;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+}
+
+footer{
+    padding: 1.5rem 4rem auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer ul{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+footer ul li a{
+    display: flex;
+    color: #ffffff;
+    padding: 1rem;
+    width: 3.75rem;
+    font-size: 1.6rem;
+    border: solid 0.1rem #ffffff;
+    border-radius: 50%;
+}
