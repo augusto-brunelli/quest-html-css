@@ -1,0 +1,30 @@
+@media (max-width: 376px){
+    header{
+        display: flex;
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 1170px){
+    body{
+        background: url('../images/bg-mobile.svg') no-repeat;
+        background-color: var(--violet);
+        background-size: contain;
+        background-position: top;
+    }
+    .container{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    footer{
+        max-width: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .botao{
+        align-self: center;
+        padding: 1.5rem 9rem;
+    }
+}

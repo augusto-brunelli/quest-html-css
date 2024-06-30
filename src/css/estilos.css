@@ -12,11 +12,21 @@ body{
     background-size: cover;
     background-color: var(--violet);
     font-weight: 400;
-    min-height: 100vh;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem 2rem;
 }
 
-header{
-    padding: 3rem 4rem;
+.container header, .conteudo{
+    margin-bottom: 4.5rem;
+}
+
+header, footer{
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
 }
 
 header img{
@@ -26,28 +36,27 @@ header img{
 }
 
 .container{
-    width: 100%;
-    padding: 1rem 4rem;
     display: flex;
+    justify-content: center;
+    gap: 2rem;
 }
 
-.container img{
-    width: 50%;
-}
-
-.container .textos{
+.container .conteudo{
+    display: flex;
     flex-direction: column;
-    margin: 4rem 2rem 0 4rem;
+    max-width: 570px;
+    justify-content: center;
 }
 
 .container .titulo{
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 5.5rem;
-    line-height: 6.5rem;
+    line-height: 5rem;
+    font-size: clamp(3rem, 2.5vw, 4rem); 
 }
 
 .container p{
-    font-size: 2.2rem;
+    font-size: clamp(1.7rem, 2.5vw, 2.2rem);
     margin-top: 2rem;
 }
 
@@ -57,17 +66,30 @@ header img{
     padding: 1.5rem 5.5rem;
     border-radius: 3rem;
     font-size: 1.6rem;
+    transition: background-color 0.2s ease-in-out;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.container .botao:hover{
+    background-color: var(--magenta);
+    color: #ffffff;
 }
 
 footer{
-    padding: 1.5rem 4rem auto;
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
 }
 
 footer ul{
     display: flex;
     gap: 1rem;
+    align-items: center;
+}
+
+footer ul li{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -77,6 +99,13 @@ footer ul li a{
     padding: 1rem;
     width: 3.75rem;
     font-size: 1.6rem;
-    border: solid 0.1rem #ffffff;
+    border: solid 0.1rem;
     border-radius: 50%;
+    margin: auto;
+    align-self: center;
+    transition: color 0.2s ease-in-out;
+}
+
+footer ul li a:hover{
+    color: var(--magenta);
 }

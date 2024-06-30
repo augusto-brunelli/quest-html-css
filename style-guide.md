@@ -14,5 +14,3 @@
 ## Icones
 - [Icones do FontAwesome](https://fontawesome.com/v5/search)
 - [Font Awesome](https://fontawesome.com/)
-
-
